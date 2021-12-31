@@ -20,9 +20,9 @@ const Header = () => {
           className="d-inline-block align-top"
         /></Navbar.Brand>
     <Nav className="me-auto">
-        <p variant="dark" >Home </p>
-        <p variant="dark" >  Call Us +522 234 56789 </p>
-        <p variant="dark" > Email us help@domain.com </p>
+    <p variant="dark" > Home </p>
+        <p variant="dark" > <i class="fas fa-phone-alt"></i> Call Us +522 234 56789 </p>
+        <p variant="dark" ><i class="far fa-envelope-open"></i>  Email us help@domain.com </p>
       {/* <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#features">Features</Nav.Link>
       <Nav.Link href="#pricing">Pricing</Nav.Link> */}
