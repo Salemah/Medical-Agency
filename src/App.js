@@ -8,6 +8,8 @@ import Services from './Pages/Home/services/services';
 import Specialist from './Pages/Home/Specialist/Specialist';
 import Notfound from './Pages/Notfound/Notfound';
 import AuthProvider from './Context/AuthProvider';
+import Servicedetails from './Pages/Home/Servicedetails/Servicedetails';
+import Privateroute from './Pages/Login/PrivateRoute/Privateroute';
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
         <Route path="/service">
          <Services></Services>
         </Route>
+        <Privateroute path="/servicedetails/:id">
+         <Servicedetails></Servicedetails>
+        </Privateroute>
         <Route path="/doctor">
          <Specialist></Specialist>
         </Route>

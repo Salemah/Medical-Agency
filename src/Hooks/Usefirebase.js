@@ -13,20 +13,15 @@ const Usefirebase =()=>{
     const auth = getAuth();
 
     const googleLogin=()=>{
-        signInWithPopup(auth, googleprovider)
-        .then((result) => {
-            const user = result.user;
-            setUser(user);
-            console.log(user);
+        return signInWithPopup(auth, googleprovider);
         
-        })
 
             };
             useEffect(()=>{
                  onAuthStateChanged(auth, user => {
                      if (user) {
                       setUser(user);
-                      console.log(user);
+                     
                      } else {
                          setUser({});
                        

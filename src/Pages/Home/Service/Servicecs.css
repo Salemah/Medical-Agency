@@ -1,0 +1,26 @@
+.cell{
+    text-align: left;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    
+}
+.cell img{
+    border-radius: 6px;
+
+}
+.cell img:hover{
+    filter: grayscale(90%);
+    
+    
+}
+.button {
+    background-color: rgba(252, 47, 64, 0.795);
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+}
+.button:hover{
+    background-color: rgb(209, 88, 7);
+}
