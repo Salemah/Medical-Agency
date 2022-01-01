@@ -1,0 +1,46 @@
+.container{
+    margin-top: 20px;
+}
+
+h1{
+    
+    font-family: 'Cormorant Garamond', serif;
+}
+h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+
+}
+#ecg-image{
+    margin: 10px 0px;
+    width: 50px;
+    height: 40px;
+   
+}
+.center{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+ 
+    grid-gap: 20px;
+ 
+}
+
+@media only screen and (max-width:688px) {
+
+    .center{
+
+    grid-template-columns: repeat(1, 1fr);
+
+ 
+}
+}
+@media only screen and (min-width:688px) and (max-width:991px)  {
+
+    .center{
+
+    grid-template-columns: repeat(2, 1fr);
+
+ 
+}
+}
