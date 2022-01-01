@@ -14,16 +14,15 @@ const Header = () => {
 
 <Navbar bg="light" variant="dark">
     <Container>
-    {/* //<Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
     <Navbar.Brand href="#home">
         <img
           alt=""
           src={m2}
           width="80"
-          height="60"
+          height="50"
           className="d-inline-block align-top"
         /></Navbar.Brand>
-    <Nav className="justify-content-end pt-3 ">
+    <Nav className="justify-content-end  ">
    
         <p variant="dark" className="" > <i class="fas fa-phone-alt text-danger bold  "></i> Call Us <span>+522 234 56789</span> </p>
         <p variant="dark " className="ms-3" ><i class="far fa-envelope-open text-danger bold"></i> Email us help@domain.com </p>
