@@ -7,7 +7,7 @@ import m1 from '../../images/1.jpg';
 import m2 from '../../images/logo.png';
 
 const Header = () => {
-  const {user} = Usefirebase();
+  const {user,logout} = Usefirebase();
     return (
         
 <>
@@ -39,15 +39,16 @@ const Header = () => {
     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
-    <Nav.Link as={NavHashLink} to="#home">Home</Nav.Link>
-      <Nav.Link as={NavHashLink} to="#features">Service</Nav.Link>
-      <Nav.Link as={NavHashLink} to="#pricing">Specislist</Nav.Link>
-      {
-      user?.email?<button className="btn btn-outline-light me-2" >Logout</button>:<Nav.Link as={Link} to="/login">Login</Nav.Link>
-      }
-      {user?.email && <Navbar.Text>
-        Signed in as:Mark Otto {user.displayName}
+    <Nav.Link as={NavHashLink} to="/home#home">Home</Nav.Link>
+      <Nav.Link as={NavHashLink} to="/home#service">Service</Nav.Link>
+      <Nav.Link as={NavHashLink} to="/home#doctor">Specislist</Nav.Link>
+      {user.email && <Navbar.Text className="me-2">
+        Signed in as: {user.displayName}
       </Navbar.Text> }
+      {
+      user.email?<button className="btn btn-outline-light me-2" onClick={logout}  >Logout</button>:<Nav.Link as={Link} to="/login">Login</Nav.Link>
+      }
+      
       
     </Navbar.Collapse>
     

@@ -1,9 +1,10 @@
 import React from 'react';
-import Usefirebase from '../../../Hooks/Usefirebase';
+import UseAuth from '../../../Hooks/UseAuth';
+
 
 
 const Login = () => {
-    const {user,googleLogin} = Usefirebase();
+    const {user,googleLogin} = UseAuth();
     return (
         <div>
             <h1 >Login</h1>

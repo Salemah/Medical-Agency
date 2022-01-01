@@ -7,11 +7,13 @@ import Login from './Pages/Login/Login/Login';
 import Services from './Pages/Home/services/services';
 import Specialist from './Pages/Home/Specialist/Specialist';
 import Notfound from './Pages/Notfound/Notfound';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+     <AuthProvider>
+     <BrowserRouter>
       <Header></Header>
       <Switch>
         <Route path="/login">
@@ -34,6 +36,7 @@ function App() {
         </Route>
       </Switch>
       </BrowserRouter>
+     </AuthProvider>
     
   
     </div>

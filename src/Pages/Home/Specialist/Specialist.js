@@ -60,7 +60,7 @@ const Specialist = () => {
         .then(data =>setDoctor(data))
     },[])
     return (
-        <Container id="experts" >
+        <Container id="doctor" >
             <h1 className=" mt-5 mb-3 text-center ">Meet Our Team Of Experienced Doctors</h1>
             <h3 className="mb-5 ">Our medical specialists care about you and your family’s health</h3>
             <Row className='text-center'>
