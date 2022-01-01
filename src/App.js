@@ -10,6 +10,7 @@ import Notfound from './Pages/Notfound/Notfound';
 import AuthProvider from './Context/AuthProvider';
 import Servicedetails from './Pages/Home/Servicedetails/Servicedetails';
 import Privateroute from './Pages/Login/PrivateRoute/Privateroute';
+import Doctorapoinemnt from './Pages/Home/Doctorappointment/Doctorapoinemnt';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         <Route path="/doctor">
          <Specialist></Specialist>
         </Route>
+        <Privateroute path="/doctorapointmnt/:did">
+         <Doctorapoinemnt></Doctorapoinemnt>
+        </Privateroute>
         <Route exact path="/">
          <Home></Home>
         </Route>

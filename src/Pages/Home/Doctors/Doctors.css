@@ -1,0 +1,30 @@
+.collum{
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+.collum:hover{
+    /* box-shadow: 0 0 2px 1px rgba(51, 53, 54, 0.5); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.doctorlist-bottom{
+    background-color: bisque;
+    width: 76%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: -30px;
+    padding-bottom: 15px;
+    border-radius: 0 0 4px 4px;
+
+}
+
+
+
+.button-dd {
+    background-color: rgba(109, 47, 252, 0.795);
+    border: none;
+    border-radius: 4px;
+    padding: 7px 12px;
+}
+.button-dd:hover{
+    background-color: rgb(209, 88, 7);
+}
