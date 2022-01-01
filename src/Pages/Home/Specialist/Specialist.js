@@ -61,7 +61,8 @@ const Specialist = () => {
     },[])
     return (
         <Container id="experts" >
-            <h1 className="text-primary mt-5 mb-3 text-center "> this is experts</h1>
+            <h1 className=" mt-5 mb-3 text-center ">Meet Our Team Of Experienced Doctors</h1>
+            <h3 className="mb-5 ">Our medical specialists care about you and your family’s health</h3>
             <Row className='text-center'>
                 {
                     doctor.map( doctor =><Doctors
