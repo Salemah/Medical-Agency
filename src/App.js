@@ -11,6 +11,7 @@ import AuthProvider from './Context/AuthProvider';
 import Servicedetails from './Pages/Home/Servicedetails/Servicedetails';
 import Privateroute from './Pages/Login/PrivateRoute/Privateroute';
 import Doctorapoinemnt from './Pages/Home/Doctorappointment/Doctorapoinemnt';
+import Footer from './Shared/Footer/Footer';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
          <Notfound></Notfound>
         </Route>
       </Switch>
+      <Footer></Footer>
       </BrowserRouter>
      </AuthProvider>
     

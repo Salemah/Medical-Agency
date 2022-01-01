@@ -1,0 +1,27 @@
+
+.footer-background{
+    background-color: black;
+    color: white;
+}
+.footer input {
+
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    border-radius: 8px; 
+    border: 1px solid gray;   
+}
+.footer textarea{
+    padding: 6px 19px;
+    margin-bottom: 5px;
+    border-radius: 8px;  
+}
+#send-button{
+    background-color:rgba(15, 127, 129, 0.596);
+    padding: 5px 13px;
+    border-radius: 6px;
+}
+#send-button:hover{
+    background-color:cadetblue;
+    color: cornsilk;
+
+}
