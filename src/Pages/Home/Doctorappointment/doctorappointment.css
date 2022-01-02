@@ -1,0 +1,21 @@
+.shipping-form input{
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+   
+
+}
+.shipping-form{
+    background-color: skyblue;
+    padding: 50px;
+}
+#btn-apt{
+    padding: 9px 35px;
+    background-color: rgb(58, 153, 231);
+    border-radius: 8px;
+    border: none;
+}
+#btn-apt:hover{
+    background-color: rgb(52, 133, 199);
+    
+}

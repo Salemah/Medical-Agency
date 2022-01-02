@@ -1,6 +1,6 @@
 .cell{
     text-align: left;
-    background-color: aqua;
+    background-color: rgb(4, 113, 177);
     border: 1px solid black;
     border-radius: 4px;
     padding: 5px;
@@ -23,4 +23,7 @@
 }
 .button:hover{
     background-color: rgb(209, 88, 7);
+}
+.cell-bottom{
+    padding: 15px;
 }

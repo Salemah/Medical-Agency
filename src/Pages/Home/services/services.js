@@ -14,9 +14,11 @@ const Services = () => {
     
     return (
         <div id="service" className="container">
+           <hr/>
             <h1>Featured Clinical Services For Patients</h1>
             <h3>Our medical specialists care about you and your family’s health</h3>
             <img id="ecg-image" src={ecg} alt=""/>
+            <hr/>
             <div class="center mt-7 p-2">
                 {
                     services.map(service=><Service key={service.id}

@@ -12,15 +12,12 @@ const Service = (props) => {
     return (
         <div className="cell pb-4 ">
         <img src={img} /><br/>
-    
-         <h3>Name: {name}</h3>
-         
-         {/* <h5>Price : {price}</h5> */}
-        
-         <p>{details.slice(0, 100)}</p>
-         <button className="button " onClick={()=>handleReadmore(id)} >Read More {name.toLowerCase()}</button>
-
-     </div>
+            <div class="cell-bottom">
+            <h3>{name}</h3>
+            <p>{details.slice(0, 100)}</p>
+            <button className="button " onClick={()=>handleReadmore(id)} >Read More {name.toLowerCase()}</button>
+                </div>
+            </div>
     );
 };
 
