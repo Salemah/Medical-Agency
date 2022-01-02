@@ -32,6 +32,9 @@
     text-align: center;
     margin-bottom: 8px;
 }
+p{
+    color: white;
+}
 i{
     color: red;
 }
