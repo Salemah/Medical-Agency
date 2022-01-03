@@ -1,0 +1,22 @@
+.social-icon{
+    margin-right: 5px;
+    font-size: 20px;
+    
+}
+.social-icon i{
+    color: #5b82d6;
+    padding-bottom: 13px;
+}
+.topbar{
+    padding: 15px;
+    margin-bottom: -10px;
+    margin-top: -20px;
+}
+.top-nav p{
+   
+    color: black;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 5px 8px;
+
+}

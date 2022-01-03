@@ -10,13 +10,11 @@ const Login = () => {
     const location = useLocation();
     const history = useHistory();
     const redirecr_url = location.state?.from || '/home';
-    console.log(redirecr_url);
+  
     const handlegoogleLogin =() =>{
-        googleLogin()
-        .then((result) => {
-            const user = result.user;
-            history.push(redirecr_url);
-        }) };
+          googleLogin();
+         history.push(redirecr_url);
+         };
     return (
         <div>
             <h1 >Login</h1>

@@ -13,7 +13,11 @@ const Usefirebase =()=>{
     const auth = getAuth();
 
     const googleLogin=()=>{
-        return signInWithPopup(auth, googleprovider);
+       signInWithPopup(auth, googleprovider)
+       .then((result) => {
+        const user = result.user;
+        setUser(user);
+        }) 
         
 
             };

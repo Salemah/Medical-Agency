@@ -6,6 +6,9 @@ const Service = (props) => {
     const {name,id,img,details,price}= props.service;
     const history = useHistory();
     const handleReadmore=(id)=>{
+        
+       
+
         history.push(`/servicedetails/${id}`);
 
     }
