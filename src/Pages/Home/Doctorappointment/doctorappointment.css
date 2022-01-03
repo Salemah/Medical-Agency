@@ -1,13 +1,18 @@
+
+
 .shipping-form input{
     padding: 6px 12px;
+    border: 1px solid gray;
     border-radius: 12px;
     margin-bottom: 10px;
+    
    
 
 }
 .shipping-form{
-    background-color: skyblue;
+    background-color: rgb(161, 163, 163);
     padding: 50px;
+    border-radius: 8px;
 }
 #btn-apt{
     padding: 9px 35px;
@@ -18,4 +23,39 @@
 #btn-apt:hover{
     background-color: rgb(52, 133, 199);
     
+}
+.appointment-page{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-image:url('../../../images/formbg.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
+    
+}
+.appointmnet-top {
+    margin-bottom: 20px;
+}
+.appointmnet-top p{
+    color: gray;
+
+}
+.appointmnet-top-col{
+    width: 50%;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+.appointmnet-top-col:hover{
+    border: 1px solid gray;
+}
+.appointmnet-top-col i{
+    font-size: 35px;
+}
+.appointmnet-top-col h4{
+    margin-bottom: 15px;
 }
