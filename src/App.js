@@ -29,15 +29,15 @@ function App() {
         <Route path="/service">
          <Services></Services>
         </Route>
-        <Privateroute path="/servicedetails/:id">
+        <Route path="/servicedetails/:id">
          <Servicedetails></Servicedetails>
-        </Privateroute>
+        </Route>
         <Route path="/doctor">
          <Specialist></Specialist>
         </Route>
-        <Privateroute path="/doctorapointmnt/:did">
+        <Route path="/doctorapointmnt/:did">
          <Doctorapoinemnt></Doctorapoinemnt>
-        </Privateroute>
+        </Route>
         <Route exact path="/">
          <Home></Home>
         </Route>

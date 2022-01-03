@@ -6,9 +6,9 @@ const Servicedetails = () => {
  
     const {id} = useParams();
     useEffect(()=>{
-        fetch('services.json')
+        fetch(`services.json/${id}`)
         .then(res =>res.json())
-        .then(data => setDetails(data))
+        .then(data => console.log(data))
     },[]);
     
     
