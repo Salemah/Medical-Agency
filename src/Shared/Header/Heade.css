@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding: 0;
 }
 .social-icon{
     margin-right: 5px;
@@ -11,7 +12,7 @@ body{
     padding-bottom: 13px;
 }
 .topbar{
-    padding: 15px;
+    padding: 5px;
     margin-bottom: -10px;
     margin-top: -20px;
 }
@@ -22,4 +23,8 @@ body{
     border-radius: 20px;
     padding: 5px 8px;
 
+}
+.nvmenu{
+    height:80px;
+    padding: 4px;
 }

@@ -8,7 +8,7 @@ const Review = () => {
             <div class="left">
                 <img src={about} alt=""/>
             </div>
-            <div class="right">
+            <div class=" right">
                 
                 <h2>Our Clients Are Our Priority, We Offer Quality Dental Services</h2>
                 <p>Our aim is to give every patient the prospect of a better quality of life. To do so, our reinvestment model ensures we maintain a high standard of quality and are able to be innovative </p>
