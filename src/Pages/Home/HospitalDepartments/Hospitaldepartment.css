@@ -9,12 +9,12 @@
     justify-content: space-evenly;
 
 }
-.col{
+.colum{
     height: 300px;
     border-radius: 7px;
 }
 
-.col p{
+.colum p{
     background-color: rgb(255, 255, 255);
     color: black;
     font-size: 20px;
@@ -26,7 +26,7 @@
     margin-top: -15px;
 
 }
- .col p:hover{
+ .colum p:hover{
     color: blue;
 } 
 /* .col:hover{

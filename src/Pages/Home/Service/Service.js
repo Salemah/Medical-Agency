@@ -23,6 +23,14 @@ const Service = (props) => {
             <button className="button " onClick={()=>handleReadmore(id)} >Read More {name.toLowerCase()}</button>
                 </div>
             </div>
+// /
+
+
+
+
+
+
+
     );
 };
 

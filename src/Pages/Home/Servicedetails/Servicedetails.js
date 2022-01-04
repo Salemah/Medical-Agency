@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import './Servicedetails.css';
+import './Servicedetailss.css';
 
 const Servicedetails = () => {
     const [details, setDetails] = useState({});
@@ -20,17 +20,17 @@ const Servicedetails = () => {
             
                 <Container>
                     <Row>
-                        <Col class="left-details"><h4>OUR</h4>
+                        <Col class="col-sm "><h4>OUR</h4>
                             <h1>Specialized Team</h1>
                             <hr />
-                            <p className="pessage"><q>We are a team of Doctor, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.</q></p>
+                            <p id="pessage"><q>We are a team of Doctor, hygienists and receptionists who work together to ensure that you receive the best treatment that you require at a very time that suits you.</q></p>
                             <hr /> </Col>
-                        <Col class="left-details">
+                        <Col class="col-sm">
                             <img  src={details.img} alt=""/>
                             <h2>{details.name}</h2>
                            </Col>
-                        <Col class="left-details">
-                            <p  className="pessage">{details.details}</p>
+                        <Col class="col-sm">
+                            <p  id="description">{details.details}</p>
                             </Col>
 
                     </Row>
