@@ -2,30 +2,10 @@
 .single-service{
     
     margin-top: -25px;
+    height: 800px;
+    padding: 10px;
 }
-.service-details{
-    background-image: url('');
-    display: flex;
-    justify-content: space-evenly;
-    
-    background-image:url('../../../images//service-details.jpg') ; 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+img{
+    border-radius: 8px;
 }
-.left-details{
-    width: 50%;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 30px;
-}
-.left-details hr{
-    width: 15%;
-    margin: auto;
-}
-.left-details p{
-    color: aqua;
-    font-size: 25px;
-    padding: 20px;
-}
+
