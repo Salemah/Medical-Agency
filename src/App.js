@@ -45,7 +45,7 @@ function App() {
          <Notfound></Notfound>
         </Route>
       </Switch>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
       </BrowserRouter>
      </AuthProvider>
     

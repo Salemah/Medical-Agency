@@ -19,12 +19,7 @@ const Hospitaldepartment = () => {
                     </div>
                 </div>
             </div>
-            {/*  */}
-
-
-
-
-            {/*  */}
+          
                             
 
         </div>

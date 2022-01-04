@@ -7,7 +7,8 @@
     background-image: url('');
     display: flex;
     justify-content: space-evenly;
-    background-image:url('../../../images//service-details.jpg') ;
+    
+    /* background-image:url('../../../images//service-details.jpg') ; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

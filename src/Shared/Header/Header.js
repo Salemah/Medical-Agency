@@ -47,7 +47,7 @@ const Header = () => {
       <Nav.Link as={NavHashLink} to="/home#service">Service</Nav.Link>
       <Nav.Link as={NavHashLink} to="/home#doctor">Specislist</Nav.Link>
       {user.email && <Navbar.Text className="me-2">
-        Signed in as: {user.displayName}
+        User: {user.displayName}
       </Navbar.Text> }
       {
       user.email?<button className="btn btn-outline-light me-2" onClick={logout}  >Logout</button>:<Nav.Link as={Link} to="/login">Login</Nav.Link>
