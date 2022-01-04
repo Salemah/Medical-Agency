@@ -4,6 +4,7 @@ import Banner from '../Banner/Banner';
 import Doctors from '../Doctors/Doctors.js';
 
 import Hospitaldepartment from '../HospitalDepartments/Hospitaldepartment';
+import Review from '../Review/Review';
 import Services from '../services/services';
 import Specialist from '../Specialist/Specialist';
 
@@ -14,6 +15,7 @@ const Home = () => {
             <Services></Services>
             <Specialist></Specialist>
             <Hospitaldepartment></Hospitaldepartment>
+            <Review></Review>
            
         </div>
     );

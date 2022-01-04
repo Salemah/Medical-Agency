@@ -1,0 +1,27 @@
+.review{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 50px;
+}
+.left{
+    width: 80%;
+}
+.left img{
+    width: 60%;
+    height: 450px;
+}
+.right{
+    width: 40%;
+    margin-right: 40px;
+}
+.right p{
+    color: rgb(0, 0, 0);
+}
+
+
+.features:hover{
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: rgba(6, 20, 206, 0.26);
+}
