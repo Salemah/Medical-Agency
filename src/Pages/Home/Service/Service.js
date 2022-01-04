@@ -13,8 +13,10 @@ const Service = (props) => {
 
     }
     return (
-        <div className="cell pb-4 ">
-        <img src={img} /><br/>
+        <div className="cell pb-4 " >
+           
+            <img src={img} /><br/>
+          
             <div class="cell-bottom">
             <h3>{name}</h3>
             <p>{details.slice(0, 100)}</p>

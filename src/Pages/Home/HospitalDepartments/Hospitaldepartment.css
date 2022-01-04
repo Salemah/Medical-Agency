@@ -1,0 +1,61 @@
+.coose-Medical{
+    background-color: steelblue;
+    padding-top: 50px;
+    color: white;
+    
+}
+.coose-Medical-middle{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.col{
+    height: 300px;
+    border-radius: 7px;
+}
+
+.col p{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+
+}
+ .col p:hover{
+    color: blue;
+} 
+/* .col:hover{
+    background-color: #3e8e41;
+    color: blue;
+
+} */
+.fst-col{
+    background-image: url('../../../images/01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.fst-col:hover{
+    
+    background-color: burlywood;
+}
+.snd-col{
+    background-image: url('../../../images/02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.thrd-col{
+    background-image: url('../../../images/03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

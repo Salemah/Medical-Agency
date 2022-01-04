@@ -1,9 +1,9 @@
 .cell{
     text-align: left;
-    background-color: rgb(4, 113, 177);
+    background-color: rgb(13, 142, 216);
     border: 1px solid black;
     border-radius: 4px;
-    padding: 5px;
+  
     
 }
 .cell img{
@@ -16,14 +16,16 @@
     
 }
 .button {
-    background-color: rgba(252, 47, 64, 0.795);
+    background-color: rgba(109, 47, 252, 0.795);
     border: none;
     border-radius: 4px;
     padding: 4px 12px;
 }
 .button:hover{
-    background-color: rgb(209, 88, 7);
+    background-color: rgba(70, 24, 177, 0.795);
+    color: white;
 }
 .cell-bottom{
-    padding: 15px;
+    padding: 20px;
+   
 }
