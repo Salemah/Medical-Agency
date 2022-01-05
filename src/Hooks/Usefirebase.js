@@ -16,58 +16,53 @@ const Usefirebase = () => {
 
   const googleLogin = () => {
     return signInWithPopup(auth, googleprovider);
-
-
-
-  };
-  useEffect(() => {
+};
+  
+    
  
-    onAuthStateChanged(auth, user => {
-      if (user) {
-        setUser(user)
-        
-        
-
-
-      } else {
-        setUser({});
-
-      }
-      setIsLoading(false);
-
-
-    });
-
-  }, []);
 
 
   const emailPassRegister = (email, password) => {
-    return createUserWithEmailAndPassword(auth, email, password);
+    return createUserWithEmailAndPassword(auth, email, password)
+   };
 
-  }
   const emailPassLogin = (email, password) => {
-    return signInWithEmailAndPassword(auth, email, password);
+    return signInWithEmailAndPassword(auth, email, password)
+   };
 
-
-  };
   const updateName=(name)=>{
     updateProfile(auth.currentUser, {
       displayName:name
     }).then(() => {
-      // const newUser= {...user,displayName:name};
-      // setUser(newUser);
+     
+      
      
     }).catch((error) => {
       
     });
 
   }
+  useEffect(() =>{
+    const unsubscribe = onAuthStateChanged(auth , (user)=> 
+    {
+       if(user){
+              
+             setUser(user)
+         } else{
+             setUser({})
+         }
+         setIsLoading(false)
+    });
+     return ()=> unsubscribe()
+},[]);
   const logout = () => {
+    setIsLoading(true);
     signOut(auth).then(() => {
 
     }).catch((error) => {
 
     });
+    setIsLoading(false);
   }
 
   return { user, setUser, googleLogin, logout, emailPassRegister, emailPassLogin,setIsLoading,isLoading,updateName }

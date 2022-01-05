@@ -1,0 +1,13 @@
+form input{
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius:7px ;
+}
+.login-form{
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+.inp{
+    margin-right: 50px;
+}
