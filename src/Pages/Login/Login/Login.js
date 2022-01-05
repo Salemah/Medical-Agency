@@ -6,10 +6,11 @@ import UseAuth from '../../../Hooks/UseAuth';
 
 
 const Login = () => {
-    const {user, setUser, googleLogin, emailPassRegister, emailPassLogin,setIsLoading } = UseAuth();
+    const {user, setUser, googleLogin, emailPassRegister, emailPassLogin,setIsLoading,updateName } = UseAuth();
   
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [names, setName] = useState('');
     const location = useLocation();
     const history = useHistory();
     const redirecr_url = location.state?.from || '/home';
@@ -19,6 +20,10 @@ const Login = () => {
     }
     const handlepasswordchange = e => {
         setPassword(e.target.value);
+    }
+    const handleNamechange = e => {
+        console.log(e.target.value)
+        setName(e.target.value);
     }
     const handlegoogleLogin = () => {
         setIsLoading(true)
@@ -47,11 +52,14 @@ const Login = () => {
     }
     
     const passwordRegister = (e) => {
-        setIsLoading(true);
+      
         e.preventDefault();
-        emailPassRegister(email, password)
+        emailPassRegister(email,password)
         .then((result) => {
-             
+            const users = result.user;
+            setIsLoading(true);
+            updateName(names);
+            setUser(users);
     
           })
           .catch((error) => {
@@ -64,7 +72,8 @@ const Login = () => {
         <div>
             <h2>Register: Create Account</h2>
             <form onSubmit={passwordRegister}>
-                <input onBlur={handleemailchange} type="email" name="email" placeholder="Enter Email" /><br />
+            <input onBlur={handleNamechange} type="text" name="name" placeholder="Your Name" /><br />
+                <input onBlur={handleemailchange} type="email" name="email" placeholder="Your Email" /><br />
                 <input onBlur={handlepasswordchange} type="password" name="password" placeholder="Enter Password" /><br />
 
                 <input type="submit" value="Submit" /><br />
