@@ -56,11 +56,7 @@ const Login = () => {
         e.preventDefault();
         emailPassRegister(email,password)
         .then((result) => {
-            const users = result.user;
-            
-            updateName(name);
-            setUser(users);
-    
+          updateName(name);
           })
           .catch((error) => {
     
@@ -71,16 +67,16 @@ const Login = () => {
     return (
         <div>
             <h2>Register: Create Account</h2>
-            <form onSubmit={passwordRegister}>
+            <form >
             <input onBlur={handleNamechange} type="text" name="name" placeholder="Your Name" /><br />
                 <input onBlur={handleemailchange} type="email" name="email" placeholder="Your Email" /><br />
                 <input onBlur={handlepasswordchange} type="password" name="password" placeholder="Enter Password" /><br />
 
-                <input type="submit" value="Submit" /><br />
+                <input onClick={passwordRegister} type="submit" value="Submit" /><br />
             </form>
             <p>Already Registered<Link to="/login">Login</Link></p>
             <div>----------or-------------</div>
-            <button className="btn-regular" onClick={passwordLogin} >Google Sign in</button>
+            <button onClick={passwordLogin} className="btn-regular"  >Google Sign in</button>
 
 
             <button onClick={handlegoogleLogin} class="btn btn-warning">Google Login</button>
