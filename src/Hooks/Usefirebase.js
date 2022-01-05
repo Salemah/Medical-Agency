@@ -1,5 +1,5 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged,signOut } from "firebase/auth";
-import { useState,useEffect } from "react";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { useState, useEffect } from "react";
 import handleIntialize from "../Pages/Login/Firebase/FirebaseIntialize";
 handleIntialize();
 
@@ -8,42 +8,52 @@ handleIntialize();
 
 const googleprovider = new GoogleAuthProvider();
 
-const Usefirebase =()=>{
-    const[user,setUser] = useState([]);
-    const auth = getAuth();
+const Usefirebase = () => {
+  const [user, setUser] = useState([]);
 
-    const googleLogin=()=>{
-       signInWithPopup(auth, googleprovider)
-       .then((result) => {
-        const user = result.user;
+  const auth = getAuth();
+
+  const googleLogin = () => {
+    return signInWithPopup(auth, googleprovider);
+
+
+
+  };
+  useEffect(() => {
+    onAuthStateChanged(auth, user => {
+      if (user) {
         setUser(user);
-        }) 
-        
 
-            };
-            useEffect(()=>{
-                 onAuthStateChanged(auth, user => {
-                     if (user) {
-                      setUser(user);
-                     
-                     } else {
-                         setUser({});
-                       
-                     }
-                    
-                    
-                   });
-                   
-              },[]);
-            const logout =()=>{
-                signOut(auth).then(() => {
-                    
-                  }).catch((error) => {
-                    
-                  });
-            }
-         
-            return {user,googleLogin,logout}
+
+      } else {
+        setUser({});
+
+      }
+
+
+    });
+
+  }, []);
+
+
+  const emailPassRegister = (email, password) => {
+    createUserWithEmailAndPassword(auth, email, password)
+
+  }
+  const emailPassLogin = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
+
+
+  };
+  const logout = () => {
+    signOut(auth).then(() => {
+
+    }).catch((error) => {
+
+    });
+  }
+
+  return { user, setUser, googleLogin, logout, emailPassRegister, emailPassLogin }
 
 }
 export default Usefirebase;
