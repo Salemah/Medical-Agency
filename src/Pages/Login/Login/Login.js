@@ -10,7 +10,7 @@ const Login = () => {
   
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [names, setName] = useState('');
+    const [name, setName] = useState('');
     const location = useLocation();
     const history = useHistory();
     const redirecr_url = location.state?.from || '/home';
@@ -22,7 +22,7 @@ const Login = () => {
         setPassword(e.target.value);
     }
     const handleNamechange = e => {
-        console.log(e.target.value)
+        
         setName(e.target.value);
     }
     const handlegoogleLogin = () => {
@@ -52,13 +52,13 @@ const Login = () => {
     }
     
     const passwordRegister = (e) => {
-      
+        setIsLoading(true);
         e.preventDefault();
         emailPassRegister(email,password)
         .then((result) => {
             const users = result.user;
-            setIsLoading(true);
-            updateName(names);
+            
+            updateName(name);
             setUser(users);
     
           })

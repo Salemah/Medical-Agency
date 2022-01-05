@@ -54,7 +54,8 @@ const Usefirebase = () => {
     updateProfile(auth.currentUser, {
       displayName:name
     }).then(() => {
-      console.log(name);
+      const newUser= {...user,displayName:name};
+      setUser(newUser);
      
     }).catch((error) => {
       
