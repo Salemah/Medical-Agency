@@ -12,6 +12,7 @@ import Servicedetails from './Pages/Home/Servicedetails/Servicedetails';
 import Privateroute from './Pages/Login/PrivateRoute/Privateroute';
 import Doctorapoinemnt from './Pages/Home/Doctorappointment/Doctorapoinemnt';
 import Footer from './Shared/Footer/Footer';
+import Diagonstick from './Pages/Home/Diagonsticdetais/Diagonstick';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Privateroute path="/doctorapointmnt/:did">
          <Doctorapoinemnt></Doctorapoinemnt>
+        </Privateroute>
+        <Privateroute  path="/diagonsticdetails">
+         <Diagonstick></Diagonstick>
         </Privateroute>
         <Route exact path="/">
          <Home></Home>

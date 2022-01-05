@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from '../../../Shared/Header/Header';
 import Banner from '../Banner/Banner';
-import Doctors from '../Doctors/Doctors.js';
+import Diagonsticbanner from '../Diagonstic/Diagonsticbanner';
+import diagonsticbanner from '../Diagonstic/Diagonsticbanner';
+
 
 import Hospitaldepartment from '../HospitalDepartments/Hospitaldepartment';
 import Review from '../Review/Review';
@@ -16,6 +18,7 @@ const Home = () => {
             <Specialist></Specialist>
             <Hospitaldepartment></Hospitaldepartment>
             <Review></Review>
+            <Diagonsticbanner></Diagonsticbanner>
            
         </div>
     );

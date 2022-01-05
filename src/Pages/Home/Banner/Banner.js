@@ -4,8 +4,8 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div class="" >
-            <Carousel  style={{width:"85%",marginLeft:"auto",marginRight:"75px"}}>
+        <div  >
+            <Carousel  style={{width:"85%",marginLeft:"auto",marginRight:"auto"}}>
         <Carousel.Item>
           <img style={{height:"500px",borderRadius:"6px"}}
             className="d-block w-100"

@@ -1,0 +1,22 @@
+.diagonsticbanner{
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    border-radius: 6px 6px 0 0;
+}
+#view-button{
+    
+    padding: 5px 20px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+#view-button:hover{
+    background-color: wheat;
+    color: black;
+}
+#viewbutton-box{
+    margin-top: 40px;
+    
+}
