@@ -10,6 +10,7 @@ const googleprovider = new GoogleAuthProvider();
 
 const Usefirebase = () => {
   const [user, setUser] = useState([]);
+  const [isLoading,setIsLoading] = useState(true);
 
   const auth = getAuth();
 
@@ -20,15 +21,19 @@ const Usefirebase = () => {
 
   };
   useEffect(() => {
+ 
     onAuthStateChanged(auth, user => {
       if (user) {
-        setUser(user);
+        setUser(user)
+        
+        
 
 
       } else {
         setUser({});
 
       }
+      setIsLoading(false);
 
 
     });
@@ -53,7 +58,7 @@ const Usefirebase = () => {
     });
   }
 
-  return { user, setUser, googleLogin, logout, emailPassRegister, emailPassLogin }
+  return { user, setUser, googleLogin, logout, emailPassRegister, emailPassLogin,setIsLoading,isLoading }
 
 }
 export default Usefirebase;

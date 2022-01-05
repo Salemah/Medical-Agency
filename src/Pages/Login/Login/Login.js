@@ -6,7 +6,7 @@ import UseAuth from '../../../Hooks/UseAuth';
 
 
 const Login = () => {
-    const {user, setUser, googleLogin, emailPassRegister, emailPassLogin } = UseAuth();
+    const {user, setUser, googleLogin, emailPassRegister, emailPassLogin,setIsLoading } = UseAuth();
   
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -21,38 +21,43 @@ const Login = () => {
         setPassword(e.target.value);
     }
     const handlegoogleLogin = () => {
+        setIsLoading(true)
         googleLogin()
             .then((result) => {
                 const user = result.user;
+                console.log(user);
                 setUser(user);
                 history.push(redirecr_url);
-            });
+            })
+            .finally(()=>setIsLoading(false)) 
        
     };
-    const Login = () => {
-        emailPassLogin();
-    }
+    
     const passwordLogin = () => {
+        setIsLoading(true);
         emailPassLogin(email, password)
         .then((result) => {
             const user = result.user;
             console.log(user);
             setUser(user);
             history.push(redirecr_url);
-        });
+        })
+        .finally(()=>setIsLoading(false));
+
     }
     
     const passwordRegister = (e) => {
+        setIsLoading(true);
         e.preventDefault();
         emailPassRegister(email, password)
         .then((result) => {
-             const user = result.user;
-             console.log(user);
+             
     
           })
           .catch((error) => {
     
-          });
+          })
+          .finally(()=>setIsLoading(false));
     }
 
     return (
